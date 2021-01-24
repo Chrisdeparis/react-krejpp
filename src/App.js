@@ -3,14 +3,15 @@ import { Button } from "react-bootstrap";
 import './style.css';
 
 export default function App() {
-  const [Name, setName] = useState("");
-  const [Email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [people, setPeople] = useState([]);
 
   const handleSubmit = e => {
     e.preventDefault();
 
-    if (Name && Email) {
-      const Person = { id: new Date().getTime().toString(), Name, Email };
+    if (name && email) {
+      const Person = { id: new Date().getTime().toString(), name, email };
       console.log(Person);
     }
   };
@@ -26,7 +27,7 @@ export default function App() {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="Name"
-          value={Name}
+          value={name}
           onChange={e => setName(e.target.value)}
         />
       </div>
@@ -40,7 +41,7 @@ export default function App() {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="name@example.com"
-          value={Email}
+          value={email}
           onChange={e => setEmail(e.target.value)}
         />
       </div>
