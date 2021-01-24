@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import './style.css';
 
 export default function App() {
   const [Name, setName] = useState("");
@@ -18,7 +19,7 @@ export default function App() {
     <div className="container">
       <div className="mb-3">
         <label htmlFor="exampleFormControlInput1" className="form-label">
-          Name :
+          Name 
         </label>
         <input
           type="email"
@@ -32,7 +33,7 @@ export default function App() {
 
       <div className="mb-3">
         <label htmlFor="exampleFormControlInput1" className="form-label">
-          Email :
+          Email 
         </label>
         <input
           type="email"

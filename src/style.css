@@ -2,3 +2,26 @@ h1,
 p {
   font-family: Lato;
 }
+body {
+  background: rgb(252, 197, 177);
+  font-family: Lato;
+}
+button {
+  background-color: black;
+  color: bisque;
+  border: 0;
+  padding: 10px;
+  margin: 0;
+}
+.mb-3 {
+  margin: 10px;
+}
+
+label {
+  margin:10px;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+}
