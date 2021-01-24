@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 
 export default function App() {
   const [Name, setName] = useState("");
@@ -43,7 +44,9 @@ export default function App() {
         />
       </div>
       <div className="mb-3">
-        <button onClick={handleSubmit} className="btn-primary">Add Person</button>
+        <Button onClick={handleSubmit} className="btn-primary">
+          Add Person
+        </Button>
       </div>
     </div>
   );
